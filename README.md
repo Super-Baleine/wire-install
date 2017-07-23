@@ -14,6 +14,13 @@ function_you_want;
 ```shell
 source install.sh;
 all_install;
+wire;
 ```
+
+# How to run Wire
+```shell
+wire;
+```
+Once you typed this command, you can quit the terminal.
 
 Wire's [website](http://wire.com).
