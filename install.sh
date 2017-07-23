@@ -30,3 +30,7 @@ wire_install(){
 all_install(){
   deps;nodeJS_install;wire-desktop;
 }
+
+wire(){
+  cd /opt/wire-desktop && npm start&;
+}
