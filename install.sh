@@ -23,11 +23,5 @@ wire_install(){
   git clone https://github.com/wireapp/wire-desktop
   cd wire-desktop;
   npm install;
-  read -p "Run it?" nyan
-  if [ ! -z "$nyan" ];then
-    npm start&
-    unset nyan;
-    exit 0;
-  fi
-
+  chown -R $USER:$USER /opt/wire-desktop;
 }
