@@ -26,3 +26,7 @@ wire_install(){
   chown -R $USER:$USER /opt/wire-desktop;
   echo 'alias "wire"="cd /opt/wire-desktop/ && npm start&"';
 }
+
+all_install(){
+  deps;nodeJS_install;wire-desktop;
+}

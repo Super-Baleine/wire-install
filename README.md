@@ -9,4 +9,11 @@ source install.sh
 function_you_want;
 ```
 
+### To install it automatically
+
+```shell
+source install.sh;
+all_install;
+```
+
 Wire's [website](http://wire.com).
