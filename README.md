@@ -8,3 +8,5 @@ That's split in several functions, use the ones you want.
 source install.sh
 function_you_want;
 ```
+
+Wire's [website](http://wire.com).
