@@ -24,4 +24,5 @@ wire_install(){
   cd wire-desktop;
   npm install;
   chown -R $USER:$USER /opt/wire-desktop;
+  echo 'alias "wire"="cd /opt/wire-desktop/ && npm start&"';
 }
