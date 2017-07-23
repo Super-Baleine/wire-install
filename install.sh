@@ -27,6 +27,7 @@ wire_install(){
   if [ ! -z "$nyan" ];then
     npm start&
     unset nyan;
+    exit 0;
   fi
 
 }
