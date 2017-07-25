@@ -24,3 +24,5 @@ wire;
 Once you typed this command, you can quit the terminal.
 
 Wire's [website](http://wire.com).
+
+Use the wire function with the user you use to do the chown command.
