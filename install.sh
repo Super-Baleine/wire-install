@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+user_inst=
 deps(){
   apt install git -y;
 }
@@ -23,9 +23,9 @@ wire_install(){
   git clone https://github.com/wireapp/wire-desktop
   cd wire-desktop;
   npm install;
-  chown -R $USER:$USER /opt/wire-desktop;
+  chown -R $user_inst:$user_inst /opt/wire-desktop;
   echo 'alias "wire"="cd /opt/wire-desktop/ && npm start&"'>\
-  ~/.bashrc;
+  /home/$user_inst/.bashrc;
 }
 
 all_install(){
