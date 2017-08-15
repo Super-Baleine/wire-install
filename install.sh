@@ -21,6 +21,10 @@ wire_install(){
 
   if [[ -z $user_inst ]]; then
     printf "What user do you want to run Wire with?\n> ";read user_inst
+    while [[ -z $user_inst ]]; do
+      printf "Please, enter a user name\n> "
+      read user_inst
+    done
   fi
 
   cd /opt;
