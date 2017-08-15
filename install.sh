@@ -28,7 +28,7 @@ wire_install(){
   cd wire-desktop;
   npm install;
   chown -R $user_inst:$user_inst /opt/wire-desktop;
-  echo 'alias "wire"="cd /opt/wire-desktop/ && npm start&"'>\
+  echo 'alias "wire"="cd /opt/wire-desktop/ && npm start&"'>>\
   /home/$user_inst/.bashrc;
 }
 
