@@ -19,6 +19,10 @@ wire_install(){
     mkdir -p /opt/;
   fi
 
+  if [[ -z $user_inst ]]; then
+    printf "What user do you want to run Wire with?\n> ";read user_inst
+  fi
+
   cd /opt;
   git clone https://github.com/wireapp/wire-desktop
   cd wire-desktop;
